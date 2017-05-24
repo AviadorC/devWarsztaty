@@ -149,6 +149,12 @@
     <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\cloudy.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\frosty.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\rainy.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\snowing.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\sunny.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\windy.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

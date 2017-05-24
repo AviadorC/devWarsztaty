@@ -1,37 +1,74 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:local="http://schemas.android.com/apk/res-auto"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent">
-	<android.support.design.widget.AppBarLayout
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:id="@+id/toolbar_layout">
-		<include
-			android:id="@+id/toolbar"
-			layout="@layout/toolbar"
-			local:layout_scrollFlags="scroll|enterAlways" />
-	</android.support.design.widget.AppBarLayout>
-	<FrameLayout
-		android:id="@+id/content_frame"
-		android:layout_below="@id/toolbar_layout"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-		<LinearLayout
-			android:orientation="vertical"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent">
-			<EditText
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:textSize="40dp"
-				local:MvxBind="Text Hello" />
-			<TextView
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:textSize="40dp"
-				local:MvxBind="Text Hello" />
-		</LinearLayout>
-	</FrameLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_layout">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            local:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>-->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rainy" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_input"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:text="Where?" />
+            <EditText
+                android:id="@+id/user_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_horizontal"
+                android:textAlignment="gravity"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                local:MvxBind="Text Location" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/weather_status_main"
+                android:layout_marginRight="16dp"
+                android:textColor="#FFFFFF"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:textSize="30sp"
+                local:MvxBind="Text WeatherStatusSubtitle" />
+            <TextView
+                android:id="@+id/weather_status_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:textColor="#FFFFFF"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:textSize="40sp"
+                local:MvxBind="Text WeatherStatusTitle" />
+        </RelativeLayout>
+    </FrameLayout>
 </RelativeLayout>

@@ -12,7 +12,7 @@ namespace DevWorkshops.Droid.Views
         {
             base.OnCreate(bundle);
 
-            SupportActionBar.SetDisplayHomeAsUpEnabled(false);
+            //SupportActionBar.SetDisplayHomeAsUpEnabled(false);
         }
     }
 }

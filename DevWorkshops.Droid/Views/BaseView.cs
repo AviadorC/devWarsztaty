@@ -14,7 +14,7 @@ namespace DevWorkshops.Droid.Views
 
             SetContentView(LayoutResource);
 
-            Toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            //Toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             if (Toolbar != null)
             {
                 SetSupportActionBar(Toolbar);
