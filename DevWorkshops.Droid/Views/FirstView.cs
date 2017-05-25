@@ -4,13 +4,14 @@ using DevWorkshops.Core.ViewModels;
 using MvvmCross.Core.ViewModels;
 using FFImageLoading;
 using Android.Widget;
-using FFImageLoading.Helpers;
-using System;
 using Android.Graphics;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Analytics;
 
 namespace DevWorkshops.Droid.Views
 {
-    [Activity(Label = "View for FirstViewModel")]
+    [Activity]
     public class FirstView : BaseView
     {
         public FirstViewModel CurrentViewModel => ViewModel as FirstViewModel;
@@ -24,6 +25,9 @@ namespace DevWorkshops.Droid.Views
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            MobileCenter.Start("86557c94-0938-4ebf-8143-76b852ef0191",
+                   typeof(Analytics), typeof(Crashes));
 
             var title = FindViewById<TextView>(Resource.Id.weather_status_main);
             var subtitle = FindViewById<TextView>(Resource.Id.weather_status_subtitle);
