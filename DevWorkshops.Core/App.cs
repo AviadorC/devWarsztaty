@@ -1,4 +1,6 @@
-﻿using MvvmCross.Platform.IoC;
+﻿using DevWorkshops.Service;
+using MvvmCross.Platform;
+using MvvmCross.Platform.IoC;
 
 namespace DevWorkshops.Core
 {
@@ -6,12 +8,14 @@ namespace DevWorkshops.Core
     {
         public override void Initialize()
         {
-            CreatableTypes()
-                .EndingWith("Service")
-                .AsInterfaces()
-                .RegisterAsLazySingleton();
+            //CreatableTypes()
+                //.EndingWith("Service")
+                //.AsInterfaces()
+                //.RegisterAsLazySingleton();
 
             RegisterAppStart<ViewModels.FirstViewModel>();
+
+            Mvx.RegisterType<IWeatherService, WeatherService>();
         }
     }
 }
