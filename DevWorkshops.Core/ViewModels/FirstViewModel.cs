@@ -1,6 +1,8 @@
 ﻿using System;
+using DevWorkshops.Core.Domain;
 using DevWorkshops.Service;
 using MvvmCross.Core.ViewModels;
+using System.Linq;
 
 namespace DevWorkshops.Core.ViewModels
 {
@@ -23,8 +25,9 @@ namespace DevWorkshops.Core.ViewModels
             get { return location; }
             set 
             { 
-                SetProperty(ref location, value); 
-                UpdateWeather();
+                SetProperty(ref location, value);
+                if (location.Length > 2) 
+                    UpdateWeather();
             }
         }
 
@@ -46,12 +49,22 @@ namespace DevWorkshops.Core.ViewModels
             set { SetProperty(ref weatherStatus, value); }
         }
 
-        private void UpdateWeather() 
+        private async void UpdateWeather() 
         {
-            var weathers = new[] { "cloudy", "frosty", "rainy", "snowing", "sunny", "windy" };
+            var weather = await weatherService.GetWeather(location);
 
-            var r = new Random();
-            WeatherStatus = weathers[r.Next(0, weathers.Length)];
+            if (!string.IsNullOrWhiteSpace(weather.Weather))
+            {
+                var weatherFromLocation = Weathers.AllWeathers[weather.Weather];
+                WeatherStatus = weather.Weather;
+                WeatherStatusTitle = weatherFromLocation.Title;
+                WeatherStatusSubtitle = weatherFromLocation.Subtitle;
+            } else 
+            {
+                WeatherStatus = string.Empty;
+                WeatherStatusTitle = string.Empty;
+                WeatherStatusSubtitle = string.Empty;
+            }
         }
     }
 }

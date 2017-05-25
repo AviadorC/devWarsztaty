@@ -6,7 +6,8 @@
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#000000">
         <ffimageloading.cross.MvxImageLoadingView
             android:id="@+id/background_image"
             android:layout_width="match_parent"
@@ -36,29 +37,30 @@
                 android:textSize="24sp"
                 local:MvxBind="Text Location" />
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_above="@+id/weather_status_main"
-                android:layout_marginRight="16dp"
-                android:textColor="#FFFFFF"
-                android:gravity="right"
-                android:textAlignment="gravity"
-                android:textSize="30sp"
-                local:MvxBind="Text WeatherStatusSubtitle" />
-            <TextView
                 android:id="@+id/weather_status_main"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
                 android:textColor="#FFFFFF"
-                android:gravity="right"
+                android:gravity="left"
                 android:textAlignment="gravity"
                 android:textSize="40sp"
                 local:MvxBind="Text WeatherStatusTitle" />
+			<TextView
+				android:id="@+id/weather_status_subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/weather_status_main"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FFFFFF"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:textSize="30sp"
+                local:MvxBind="Text WeatherStatusSubtitle" />
         </RelativeLayout>
     </FrameLayout>
 </RelativeLayout>

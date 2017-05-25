@@ -6,6 +6,7 @@ using FFImageLoading;
 using Android.Widget;
 using FFImageLoading.Helpers;
 using System;
+using Android.Graphics;
 
 namespace DevWorkshops.Droid.Views
 {
@@ -24,6 +25,13 @@ namespace DevWorkshops.Droid.Views
         {
             base.OnCreate(bundle);
 
+            var title = FindViewById<TextView>(Resource.Id.weather_status_main);
+            var subtitle = FindViewById<TextView>(Resource.Id.weather_status_subtitle);
+
+            Typeface tf = Typeface.CreateFromAsset(Assets, "Fonts/Montserrat-ExtraLight.otf");
+            title.SetTypeface(tf, TypefaceStyle.Normal);
+            subtitle.SetTypeface(tf, TypefaceStyle.Normal);
+
             backgroundImage = FindViewById<FFImageLoading.Cross.MvxImageLoadingView>(Resource.Id.background_image);
 
             weatherImageListener =
@@ -31,10 +39,13 @@ namespace DevWorkshops.Droid.Views
                     () => CurrentViewModel.WeatherStatus,
                     (sender, e) => 
                     {
-                        ImageService.Instance
-                                    .LoadCompiledResource(CurrentViewModel.WeatherStatus)
-                                    .Into(backgroundImage);
-            });
+                        if (!string.IsNullOrWhiteSpace(CurrentViewModel.WeatherStatus))
+                            ImageService.Instance
+                                        .LoadCompiledResource(CurrentViewModel.WeatherStatus)
+                                        .Into(backgroundImage);
+                        else
+                            backgroundImage.SetImageDrawable(null);
+                    });
         }
     }
 }

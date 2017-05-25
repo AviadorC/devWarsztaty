@@ -49,12 +49,17 @@
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="Domain\Weathers.cs" />
+    <Compile Include="Domain\WeatherDescription.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevWorkshops.Service\DevWorkshops.Service.csproj">
       <Project>{5B96D41B-4002-4E2C-A032-FA89DD9AB346}</Project>
       <Name>DevWorkshops.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

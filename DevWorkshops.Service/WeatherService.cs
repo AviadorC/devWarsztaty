@@ -13,9 +13,9 @@ namespace DevWorkshops.Service
 
         protected override string Scheme => "http";
 
-        public async Task<GeneralResponse<WeatherModel>> GetWeather(string location)
+        public async Task<WeatherModel> GetWeather(string location)
         {
-            var result = new GeneralResponse<WeatherModel>();
+            var result = new WeatherModel();
 
             string method = $"weather/{ location }";
             var response = await GetAsync(BuildUri(method));
@@ -23,7 +23,7 @@ namespace DevWorkshops.Service
             if (response.IsSuccess)
             {
                 var responseContent = JsonConvert.DeserializeObject<WeatherModel>(response.ResponseContentString);
-                result.Data = responseContent;
+                result = responseContent;
             }
 
             return result;

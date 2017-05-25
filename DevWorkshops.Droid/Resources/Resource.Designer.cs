@@ -2342,8 +2342,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0010
 			public const int MvxBindingTagUnique = 2131427344;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int action0 = 2131427464;
+			// aapt resource value: 0x7f0b0089
+			public const int action0 = 2131427465;
 			
 			// aapt resource value: 0x7f0b0066
 			public const int action_bar = 2131427430;
@@ -2366,17 +2366,17 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int action_bar_title = 2131427395;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int action_container = 2131427461;
+			// aapt resource value: 0x7f0b0086
+			public const int action_container = 2131427462;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int action_context_bar = 2131427431;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int action_divider = 2131427468;
+			// aapt resource value: 0x7f0b008d
+			public const int action_divider = 2131427469;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int action_image = 2131427462;
+			// aapt resource value: 0x7f0b0087
+			public const int action_image = 2131427463;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int action_menu_divider = 2131427333;
@@ -2393,11 +2393,11 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0045
 			public const int action_mode_close_button = 2131427397;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int action_text = 2131427463;
+			// aapt resource value: 0x7f0b0088
+			public const int action_text = 2131427464;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int actions = 2131427477;
+			// aapt resource value: 0x7f0b0096
+			public const int actions = 2131427478;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int activity_chooser_view_content = 2131427398;
@@ -2429,8 +2429,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b004d
 			public const int buttonPanel = 2131427405;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int cancel_action = 2131427465;
+			// aapt resource value: 0x7f0b008a
+			public const int cancel_action = 2131427466;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int center = 2131427352;
@@ -2444,8 +2444,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b005d
 			public const int checkbox = 2131427421;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int chronometer = 2131427473;
+			// aapt resource value: 0x7f0b0092
+			public const int chronometer = 2131427474;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int clip_horizontal = 2131427364;
@@ -2498,8 +2498,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int end = 2131427355;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int end_padder = 2131427483;
+			// aapt resource value: 0x7f0b009c
+			public const int end_padder = 2131427484;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int enterAlways = 2131427345;
@@ -2537,8 +2537,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b004b
 			public const int icon = 2131427403;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int icon_group = 2131427478;
+			// aapt resource value: 0x7f0b0097
+			public const int icon_group = 2131427479;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int ifRoom = 2131427392;
@@ -2546,8 +2546,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0048
 			public const int image = 2131427400;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int info = 2131427474;
+			// aapt resource value: 0x7f0b0093
+			public const int info = 2131427475;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int item_touch_helper_previous_elevation = 2131427340;
@@ -2558,11 +2558,11 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b001d
 			public const int left = 2131427357;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int line1 = 2131427479;
+			// aapt resource value: 0x7f0b0098
+			public const int line1 = 2131427480;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int line3 = 2131427481;
+			// aapt resource value: 0x7f0b009a
+			public const int line3 = 2131427482;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int listMode = 2131427378;
@@ -2570,11 +2570,11 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b004a
 			public const int list_item = 2131427402;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int masked = 2131427486;
+			// aapt resource value: 0x7f0b009f
+			public const int masked = 2131427487;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int media_actions = 2131427467;
+			// aapt resource value: 0x7f0b008c
+			public const int media_actions = 2131427468;
 			
 			// aapt resource value: 0x7f0b003d
 			public const int middle = 2131427389;
@@ -2597,14 +2597,14 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b002a
 			public const int normal = 2131427370;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int notification_background = 2131427476;
+			// aapt resource value: 0x7f0b0095
+			public const int notification_background = 2131427477;
+			
+			// aapt resource value: 0x7f0b008f
+			public const int notification_main_column = 2131427471;
 			
 			// aapt resource value: 0x7f0b008e
-			public const int notification_main_column = 2131427470;
-			
-			// aapt resource value: 0x7f0b008d
-			public const int notification_main_column_container = 2131427469;
+			public const int notification_main_column_container = 2131427470;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int parallax = 2131427362;
@@ -2627,11 +2627,11 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b001e
 			public const int right = 2131427358;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int right_icon = 2131427475;
+			// aapt resource value: 0x7f0b0094
+			public const int right_icon = 2131427476;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int right_side = 2131427471;
+			// aapt resource value: 0x7f0b0090
+			public const int right_side = 2131427472;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int screen = 2131427374;
@@ -2726,8 +2726,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b001f
 			public const int start = 2131427359;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int status_bar_latest_event_content = 2131427466;
+			// aapt resource value: 0x7f0b008b
+			public const int status_bar_latest_event_content = 2131427467;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int submenuarrow = 2131427424;
@@ -2738,11 +2738,11 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0033
 			public const int tabMode = 2131427379;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int text = 2131427482;
+			// aapt resource value: 0x7f0b009b
+			public const int text = 2131427483;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int text2 = 2131427480;
+			// aapt resource value: 0x7f0b0099
+			public const int text2 = 2131427481;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int textSpacerNoButtons = 2131427412;
@@ -2759,8 +2759,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0001
 			public const int textinput_error = 2131427329;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int time = 2131427472;
+			// aapt resource value: 0x7f0b0091
+			public const int time = 2131427473;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int title = 2131427404;
@@ -2771,8 +2771,8 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0059
 			public const int title_template = 2131427417;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int toolbar = 2131427484;
+			// aapt resource value: 0x7f0b009d
+			public const int toolbar = 2131427485;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int top = 2131427360;
@@ -2801,11 +2801,14 @@ namespace DevWorkshops.Droid
 			// aapt resource value: 0x7f0b0002
 			public const int view_offset_helper = 2131427330;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int visible = 2131427485;
+			// aapt resource value: 0x7f0b009e
+			public const int visible = 2131427486;
 			
 			// aapt resource value: 0x7f0b0084
 			public const int weather_status_main = 2131427460;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int weather_status_subtitle = 2131427461;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int withText = 2131427394;
