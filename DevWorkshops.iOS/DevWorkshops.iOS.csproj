@@ -105,6 +105,15 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="WebP.Touch">
+      <HintPath>..\packages\WebP.Touch.1.0.3\lib\Xamarin.iOS10\WebP.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.2.9\lib\Xamarin.iOS10\FFImageLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.2.9\lib\Xamarin.iOS10\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevWorkshops.Core\DevWorkshops.Core.csproj">
@@ -156,6 +165,32 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-50x50%401x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-50x50%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\sunny.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cloudy.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\frosty.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\rainy.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\snowing.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\windy.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\windy.imageset\windy.jpg" />
+    <ImageAsset Include="Assets.xcassets\snowing.imageset\snowing.jpg" />
+    <ImageAsset Include="Assets.xcassets\rainy.imageset\rainy.jpg" />
+    <ImageAsset Include="Assets.xcassets\frosty.imageset\frosty.jpg" />
+    <ImageAsset Include="Assets.xcassets\cloudy.imageset\cloudy.jpg" />
+    <ImageAsset Include="Assets.xcassets\sunny.imageset\sunny.jpg" />
+    <ImageAsset Include="Assets.xcassets\splash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\splash.imageset\splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Frosty.imageset\" />
+    <Folder Include="Assets.xcassets\Rainy.imageset\" />
+    <Folder Include="Assets.xcassets\Snowing.imageset\" />
+    <Folder Include="Assets.xcassets\sunny.imageset\" />
+    <Folder Include="Assets.xcassets\cloudy.imageset\" />
+    <Folder Include="Assets.xcassets\frosty.imageset\" />
+    <Folder Include="Assets.xcassets\rainy.imageset\" />
+    <Folder Include="Assets.xcassets\snowing.imageset\" />
+    <Folder Include="Assets.xcassets\windy.imageset\" />
+    <Folder Include="Assets.xcassets\splash.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
