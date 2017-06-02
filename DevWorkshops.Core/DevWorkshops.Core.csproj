@@ -51,6 +51,7 @@
     <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="Domain\Weathers.cs" />
     <Compile Include="Domain\WeatherDescription.cs" />
+    <Compile Include="Common\IPlatformSpecific.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevWorkshops.Service\DevWorkshops.Service.csproj">
@@ -60,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
+    <Folder Include="Common\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

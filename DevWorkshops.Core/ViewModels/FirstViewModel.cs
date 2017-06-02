@@ -3,6 +3,8 @@ using DevWorkshops.Core.Domain;
 using DevWorkshops.Service;
 using MvvmCross.Core.ViewModels;
 using System.Linq;
+using System.ComponentModel;
+using DevWorkshops.Core.Common;
 
 namespace DevWorkshops.Core.ViewModels
 {
@@ -15,9 +17,13 @@ namespace DevWorkshops.Core.ViewModels
         private string weatherStatusTitle;
         private string weatherStatus;
 
-        public FirstViewModel(IWeatherService weatherService) 
+        public FirstViewModel(
+            IWeatherService weatherService,
+            IPlatformSpecific platformSpecific) 
         {
             this.weatherService = weatherService;
+
+            System.Diagnostics.Debug.WriteLine(platformSpecific.From);
         }
 
         public string Location

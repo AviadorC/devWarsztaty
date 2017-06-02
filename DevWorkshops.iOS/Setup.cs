@@ -1,6 +1,9 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using DevWorkshops.Core.Common;
+using DevWorkshops.iOS.PlatformSpecific;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
 using UIKit;
 
@@ -26,6 +29,12 @@ namespace DevWorkshops.iOS
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
+        }
+
+        protected override void InitializeLastChance()
+        {
+            Mvx.RegisterType<IPlatformSpecific, PlatformSpecificProvider>();
+            base.InitializeLastChance();
         }
     }
 }
